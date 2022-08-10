@@ -2,11 +2,12 @@ import { useState, useEffect, Suspense } from "react";
 import { ThemeProvider } from "@material-ui/styles";
 import { darkTheme, lightTheme } from "./assets/theme/theme.js";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import "./App.css";
+import "./App.scss";
 import ScrollToTop from "./components/ScrollToTop";
 import { BrowserRouter as Router } from "react-router-dom";
 import ThemeContext from "./contexts/themeContext";
 import LoaderContext from "./contexts/loaderContext";
+import Views from "./Views";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -16,7 +17,7 @@ function App() {
       window.matchMedia &&
       window.matchMedia("(prefers-color-scheme: dark)").matches
     ) {
-      setIsDarkMode(true);
+      setIsDarkMode(false);
     } else {
       setIsDarkMode(false);
     }
@@ -29,6 +30,7 @@ function App() {
             <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
               <CssBaseline />
               <ScrollToTop />
+              <Views />
             </ThemeProvider>
           </LoaderContext.Provider>
         </ThemeContext.Provider>
