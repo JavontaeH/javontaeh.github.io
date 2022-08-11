@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { makeStyles } from "@material-ui/core";
 import { motion } from "framer-motion";
 import LoaderContext from "../contexts/loaderContext";
-import ThemeContext from "../contexts/themeContext.js";
 
 const LoaderContainer = ({ children }) => {
   const { setIsLoading } = useContext(LoaderContext);
@@ -30,7 +29,6 @@ const LoaderContainer = ({ children }) => {
 };
 
 const useStyles = makeStyles((theme) => {
-  const { isDarkMode, setIsDarkMode } = useContext(ThemeContext);
   return {
     container: {
       position: "fixed",
@@ -42,7 +40,7 @@ const useStyles = makeStyles((theme) => {
       justifyContent: "center",
       alignItems: "center",
 
-      backgroundColor: isDarkMode ? "#28201a" : "#0055b3",
+      backgroundColor: theme.palette.background.default,
       zIndex: 10000,
     },
     content: {

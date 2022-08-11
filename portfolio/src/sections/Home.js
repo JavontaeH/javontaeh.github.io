@@ -19,7 +19,6 @@ const Home = () => {
       }));
     } else {
       controls.start({ opacity: 0, y: 5 });
-      // change opacity to 0 after I build loading component
     }
   }, [isLoading, controls]);
 
@@ -40,7 +39,7 @@ const Home = () => {
             animate={{ rotate: [-90, 0, -95] }}
             transition={{ repeat: Infinity, duration: 1.2, repeatDelay: 1 }}
           >
-            {/* emoji here? */}
+            {/* TODO: emoji here? */}
           </motion.div>
           , {"I'm"}
         </Typography>

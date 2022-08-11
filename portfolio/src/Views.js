@@ -3,7 +3,7 @@ import { useMediaQuery, useTheme } from "@material-ui/core";
 import { Routes, Route } from "react-router-dom";
 const Home = lazy(() => import("./pages/Home/Home.js"));
 const Navbar = lazy(() => import("./components/Navbar/Navbar.js"));
-// const Social = lazy(() => import("./components/Social"));
+const Social = lazy(() => import("./components/Social/Social.js"));
 // const Footer = lazy(() => import("./components/Footer"));
 const LoaderComponent = lazy(() =>
   import("./components/Loader/LoaderComponent.js")
@@ -16,7 +16,7 @@ const Views = () => {
     <>
       <LoaderComponent />
       <Navbar />
-      {!isMobile}
+      {!isMobile && <Social />}
       <Routes>
         <Route exact path="/" element={<Home />} />
       </Routes>

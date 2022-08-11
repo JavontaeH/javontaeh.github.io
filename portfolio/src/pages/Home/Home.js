@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Home from "../../sections/Home.js";
-// import About from "../../sections/About";
-// import Experience from "../../sections/Experience";
+import About from "../../sections/About.js";
+import Experience from "../../sections/Experience.js";
 // import Projects from "../../sections/Projects";
 // import Contact from "../../sections/Contact";
 // import Background3d from "../../components/Background3d.js/Background3d";
@@ -22,11 +22,11 @@ const MainHome = () => {
       }}
     >
       <Home />
-      {/* <About />
-            <Experience />
-            <Projects />
+      <About />
+      <Experience />
+      {/* <Projects />
             <Contact />
-            {!isMobile && <Background3d />} */}
+            {!isMobile && <Background3d />}  */}
     </motion.main>
   );
 };

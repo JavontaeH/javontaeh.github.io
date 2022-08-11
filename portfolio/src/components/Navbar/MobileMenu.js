@@ -36,16 +36,16 @@ const MobileMenu = ({ open, onClose, onOpen }) => {
       <div className={classes.list} role="presentation">
         <List className={classes.fullList}>
           <ListItem {...listItemProps} to="about">
-            {"menu_about"}
+            {"About"}
           </ListItem>
           <ListItem {...listItemProps} to="experience">
-            {"menu_experience"}
+            {"Experience"}
           </ListItem>
           <ListItem {...listItemProps} to="projects">
-            {"menu_projects"}
+            {"Projects"}
           </ListItem>
           <ListItem {...listItemProps} to="contact">
-            {"menu_contact"}
+            {"Contact"}
           </ListItem>
           <ListItem className={classes.btnContainer}>
             <Button
@@ -55,7 +55,7 @@ const MobileMenu = ({ open, onClose, onOpen }) => {
               color="primary"
               underline="none"
             >
-              {"menu_resume"}
+              {"Resume"}
             </Button>
           </ListItem>
           <ListItem className={classes.btnContainer}>

@@ -19,7 +19,7 @@ const DarkModeSwitcher = ({ onClose }) => {
           }}
         />
       }
-      label={"dark_mode"}
+      label="Dark Mode"
     />
   );
 };

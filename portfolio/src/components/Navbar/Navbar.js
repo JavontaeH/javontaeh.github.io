@@ -31,6 +31,8 @@ const Navbar = () => {
     scrolled: { height: theme.navbarHeight, boxShadow: theme.shadows[10] },
   };
 
+  //TODO: FIX SCROLL VALUES
+
   useEffect(() => {
     if (!isLoading) {
       controls.start({

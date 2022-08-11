@@ -84,7 +84,7 @@ const Menu = ({ homeIsActive }) => {
           custom={0}
           animate={controls}
           to="about"
-          label={"menu_about"}
+          label="About"
           onSetActive={() => spyHandleChange(0)}
           onSetInactive={() => spyHandleChange(false)}
         />
@@ -93,7 +93,7 @@ const Menu = ({ homeIsActive }) => {
           animate={controls}
           custom={1}
           to="experience"
-          label={"menu_experience"}
+          label="Experience"
           onSetActive={() => spyHandleChange(1)}
         />
         <StyledTab
@@ -101,7 +101,7 @@ const Menu = ({ homeIsActive }) => {
           animate={controls}
           custom={2}
           to="projects"
-          label={"menu_projects"}
+          label="Projects"
           onSetActive={() => spyHandleChange(2)}
         />
         <StyledTab
@@ -109,7 +109,7 @@ const Menu = ({ homeIsActive }) => {
           animate={controls}
           custom={3}
           to="contact"
-          label={"menu_contact"}
+          label="Contact"
           onSetActive={() => spyHandleChange(3)}
         />
       </StyledTabs>
@@ -121,7 +121,7 @@ const Menu = ({ homeIsActive }) => {
           color="primary"
           underline="none"
         >
-          {"menu_resume"}
+          Resume
         </Button>
       </motion.div>
       <motion.div custom={5} animate={controls}></motion.div>
