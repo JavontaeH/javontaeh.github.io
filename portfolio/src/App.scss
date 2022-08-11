@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&display=swap");
-@import "~loaders.css/src/animations/pacman.scss";
 
 *::-webkit-scrollbar {
   height: 10px;
@@ -21,4 +20,11 @@ a {
 }
 .NSS:hover {
   text-decoration: underline;
+}
+
+.loader-hidden {
+  display: none;
+}
+.loader-active {
+  display: block;
 }

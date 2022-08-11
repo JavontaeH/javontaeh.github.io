@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => {
       justifyContent: "center",
       alignItems: "center",
 
-      backgroundColor: theme.palette.background.default,
+      backgroundColor: theme.palette.secondary.main,
       zIndex: 10000,
     },
     content: {

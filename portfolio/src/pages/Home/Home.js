@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Home from "../../sections/Home.js";
 import About from "../../sections/About.js";
 import Experience from "../../sections/Experience.js";
-// import Projects from "../../sections/Projects";
+import Projects from "../../sections/Projects";
 // import Contact from "../../sections/Contact";
 // import Background3d from "../../components/Background3d.js/Background3d";
 import { useMediaQuery, useTheme } from "@material-ui/core";
@@ -24,9 +24,9 @@ const MainHome = () => {
       <Home />
       <About />
       <Experience />
-      {/* <Projects />
-            <Contact />
-            {!isMobile && <Background3d />}  */}
+      <Projects />
+      {/* <Contact />
+      {!isMobile && <Background3d />} */}
     </motion.main>
   );
 };

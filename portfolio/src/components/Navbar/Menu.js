@@ -10,6 +10,7 @@ import {
 import { motion, useAnimation } from "framer-motion";
 import { Link, Events } from "react-scroll";
 import LoaderContext from "../../contexts/loaderContext";
+import resume from "../../assets/images/resume.pdf";
 
 const smoothScrollProps = {
   spy: true,
@@ -116,7 +117,7 @@ const Menu = ({ homeIsActive }) => {
       <motion.div custom={4} animate={controls}>
         <Button
           component={MuiLink}
-          href="/resume.pdf"
+          href={resume}
           variant="outlined"
           color="primary"
           underline="none"

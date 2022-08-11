@@ -10,6 +10,7 @@ import {
 } from "@material-ui/core";
 import { Link } from "react-scroll";
 import DarkModeSwitcher from "../ToggleTheme/DarkModeSwitcher.js";
+import resume from "../../assets/images/resume.pdf";
 
 const MobileMenu = ({ open, onClose, onOpen }) => {
   const classes = useStyles();
@@ -50,7 +51,7 @@ const MobileMenu = ({ open, onClose, onOpen }) => {
           <ListItem className={classes.btnContainer}>
             <Button
               component={MuiLink}
-              href="/resume.pdf"
+              href={resume}
               variant="outlined"
               color="primary"
               underline="none"

@@ -14,7 +14,9 @@ const Logo = ({ setHomeIsActive, ...rest }) => {
       onSetActive={() => setHomeIsActive(true)}
       onSetInactive={() => setHomeIsActive(false)}
       className={classes.root}
-    ></Link>
+    >
+      <h1 style={{ fontSize: "32px" }}>JCH</h1>
+    </Link>
   );
 };
 

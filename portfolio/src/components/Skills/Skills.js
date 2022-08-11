@@ -7,15 +7,7 @@ import {
   Paper,
 } from "@material-ui/core";
 import ProgressBar from "./ProgressBar";
-
-const skillsList = [
-  { title: "JavaScript", value: 85 },
-  { title: "React JS", value: 80 },
-  { title: "C#", value: 80 },
-  { title: ".NET", value: 75 },
-  { title: "SqlServer", value: 70 },
-  { title: "Firebase", value: 50 },
-];
+import { skillsList } from "../../data";
 
 function LinearProgressWithLabel({ title, value }) {
   const classes = useStyles();

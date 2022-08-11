@@ -11,23 +11,7 @@ import {
 } from "@material-ui/core";
 import { Language, Facebook, Instagram } from "@material-ui/icons";
 import IconBtn from "../../components/IconBtn";
-
-const experienceList = [
-  {
-    id: 0,
-    company: "Nashville Software School",
-    title: "Software Engineer Apprentice",
-    duration: "Feb 2022 - August 2022",
-    overview:
-      "Intensive full-time 6-month full-stack web development boot-camp supplementing learning with both individual and team-based projects. Learned not only languages such as React, JavaScript, C#, .NET, and SqlServer, and tools such as Github, DBDiagram, Canva, and Figma but also got a lot of valuable experience learning how to actually work in a software development environment and the important soft skills that are required.",
-
-    links: {
-      website: "https://nashvillesoftwareschool.com/",
-      facebook: "https://www.facebook.com/NashvilleSoftwareSchool",
-      instagram: "https://www.instagram.com/nashvillesoftwareschool/",
-    },
-  },
-];
+import { experienceList } from "../../data.js";
 
 const StyledTabs = () => {
   const theme = useTheme();

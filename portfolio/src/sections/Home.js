@@ -45,7 +45,7 @@ const Home = () => {
         </Typography>
         <motion.div animate={controls} custom={1}>
           <h1 style={{ width: "100%", fontSize: "60px", margin: "0" }}>
-            Jae Hardeman
+            Javontae (Jae) Hardeman
           </h1>
         </motion.div>
         <Typography
@@ -90,7 +90,7 @@ const Home = () => {
             color="primary"
             size="large"
           >
-            {"See Resume"}
+            {"Contact Me"}
           </Button>
         </motion.div>
       </div>

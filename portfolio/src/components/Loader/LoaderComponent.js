@@ -1,11 +1,12 @@
 import React from "react";
-import Loader from "react-loader";
 import LoaderContainer from "../../containers/LoaderContainer";
+import HashLoader from "react-spinners/HashLoader";
 
 const LoaderComponent = () => {
+  //TODO: REPLACE WITH PACMAN LOADER?
   return (
     <LoaderContainer>
-      <Loader type="pacman" />
+      <HashLoader color="#fff" speedMultiplier="1.5" />
     </LoaderContainer>
   );
 };

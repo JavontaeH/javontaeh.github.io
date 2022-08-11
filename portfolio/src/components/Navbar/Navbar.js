@@ -32,6 +32,7 @@ const Navbar = () => {
   };
 
   //TODO: FIX SCROLL VALUES
+  //TODO: FIX NAV NOT SHOWING
 
   useEffect(() => {
     if (!isLoading) {
