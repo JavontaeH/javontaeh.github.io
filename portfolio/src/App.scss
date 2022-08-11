@@ -11,7 +11,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: rgba(54, 54, 54, 0.5);
 }
 
@@ -22,9 +22,6 @@ a {
   text-decoration: underline;
 }
 
-.loader-hidden {
-  display: none;
-}
-.loader-active {
-  display: block;
+.MuiFormControlLabel-root {
+  margin-right: 10px !important;
 }

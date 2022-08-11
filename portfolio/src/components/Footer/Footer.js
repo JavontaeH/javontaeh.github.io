@@ -30,7 +30,7 @@ const Footer = () => {
 const useStyles = makeStyles((theme) => ({
   footer: {
     paddingTop: theme.spacing(4),
-    paddingBottom: theme.spacing(6),
+    paddingBottom: theme.spacing(20),
   },
 }));
 

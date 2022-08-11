@@ -41,7 +41,12 @@ const Social = ({ mobile }) => {
     return (
       <motion.div className={classes.wrapper}>
         <motion.div animate={controls} custom={0}>
-          <IconBtn icon={GitHub} m={1} href="https://github.com/JavontaeH" />
+          <IconBtn
+            icon={GitHub}
+            m={1}
+            href="https://github.com/JavontaeH"
+            alt="Github"
+          />
         </motion.div>
 
         <motion.div animate={controls} custom={2}>
@@ -49,6 +54,7 @@ const Social = ({ mobile }) => {
             icon={LinkedIn}
             m={1}
             href="https://www.linkedin.com/in/javontae-hardeman/"
+            alt="LinkedIn"
           />
         </motion.div>
         <motion.div animate={controls} custom={3}>
@@ -56,6 +62,7 @@ const Social = ({ mobile }) => {
             icon={Email}
             m={1}
             href="mailto:hardeman.javontae@gmail.com"
+            alt="Email"
           />
         </motion.div>
         <motion.div animate={controls} custom={4}>

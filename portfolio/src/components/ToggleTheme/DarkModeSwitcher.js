@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { Switch, FormControlLabel } from "@material-ui/core";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+import IconBtn from "../IconBtn";
 import ThemeContext from "../../contexts/themeContext";
 
 const DarkModeSwitcher = ({ onClose }) => {
@@ -12,14 +14,11 @@ const DarkModeSwitcher = ({ onClose }) => {
           name="checkedDarkMode"
           color="primary"
           onChange={() => {
-            if (onClose) {
-              onClose();
-            }
             setIsDarkMode(!isDarkMode);
           }}
         />
       }
-      label="Dark Mode"
+      label={<IconBtn icon={DarkModeIcon} fontSize="32" />}
     />
   );
 };

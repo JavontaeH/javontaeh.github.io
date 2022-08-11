@@ -62,16 +62,16 @@ const darkTheme = createTheme({
 const lightTheme = createTheme({
   palette: {
     background: {
-      default: "#fff",
-      paper: "#7d7d7d",
+      default: "	#eeeeee",
+      paper: "#828282",
     },
     primary: {
       main: "#0055b3",
       contrastText: "#000",
     },
     secondary: {
-      main: "#7d7d7d",
-      contrastText: "rgb(230,230,230)",
+      main: "#828282",
+      contrastText: "#000",
     },
     text: {
       primary: "#000",

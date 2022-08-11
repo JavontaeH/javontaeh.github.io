@@ -3,9 +3,8 @@ import { motion } from "framer-motion";
 import Home from "../../sections/Home.js";
 import About from "../../sections/About.js";
 import Experience from "../../sections/Experience.js";
-import Projects from "../../sections/Projects";
-// import Contact from "../../sections/Contact";
-// import Background3d from "../../components/Background3d.js/Background3d";
+import Projects from "../../sections/Projects.js";
+import Contact from "../../sections/Contact.js";
 import { useMediaQuery, useTheme } from "@material-ui/core";
 
 const MainHome = () => {
@@ -25,8 +24,8 @@ const MainHome = () => {
       <About />
       <Experience />
       <Projects />
-      {/* <Contact />
-      {!isMobile && <Background3d />} */}
+      <Contact />
+      {/* if i figure out fun landing page animation i can put it here{!isMobile && <Animation />} */}
     </motion.main>
   );
 };

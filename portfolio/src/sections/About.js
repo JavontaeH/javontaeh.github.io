@@ -6,6 +6,7 @@ import {
   makeStyles,
   Box,
   useMediaQuery,
+  Link,
 } from "@material-ui/core";
 import SectionContainer from "../containers/SectionContainer.js";
 import Skills from "../components/Skills/Skills.js";
@@ -19,13 +20,13 @@ const About = () => {
   const about_desc = (
     <p>
       Prior to attending{" "}
-      <a
-        style={{ color: "#FF8200" }}
+      <Link
+        className="custom-link"
         href="https://nashvillesoftwareschool.com/"
-        className="NSS"
+        color="primary"
       >
-        NSS
-      </a>
+        {"NSS"}
+      </Link>
       , I was an avid gamer with a lifelong interest in tech. While supporting
       my college education doing freelance work as a Thumbnail Designer and
       Video Editor, my passion for content creation and technology led me to

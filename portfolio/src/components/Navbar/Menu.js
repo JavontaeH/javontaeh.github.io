@@ -9,7 +9,7 @@ import {
 } from "@material-ui/core";
 import { motion, useAnimation } from "framer-motion";
 import { Link, Events } from "react-scroll";
-import LoaderContext from "../../contexts/loaderContext";
+import loaderContext from "../../contexts/loaderContext";
 import resume from "../../assets/images/resume.pdf";
 
 const smoothScrollProps = {
@@ -29,7 +29,7 @@ const Menu = ({ homeIsActive }) => {
   const classes = useStyles();
   const [value, setValue] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
-  const { isLoading } = useContext(LoaderContext);
+  const { isLoading } = useContext(loaderContext);
   const controls = useAnimation();
 
   useEffect(() => {
@@ -41,18 +41,6 @@ const Menu = ({ homeIsActive }) => {
       setIsScrolling(false);
     });
   });
-
-  useEffect(() => {
-    if (!isLoading) {
-      controls.start((i) => ({
-        y: 0,
-        opacity: 0,
-        transition: { delay: i * 0.1 + 0.3 },
-      }));
-    } else {
-      controls.start({ opacity: 0, y: -5 });
-    }
-  }, [isLoading, controls]);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);

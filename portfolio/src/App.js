@@ -8,6 +8,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import ThemeContext from "./contexts/themeContext";
 import LoaderContext from "./contexts/loaderContext";
 import Views from "./Views";
+import Check from "./assets/images/Check.js";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -17,9 +18,9 @@ function App() {
       window.matchMedia &&
       window.matchMedia("(prefers-color-scheme: dark)").matches
     ) {
-      setIsDarkMode(true);
+      setIsDarkMode(false);
     } else {
-      setIsDarkMode(true);
+      setIsDarkMode(false);
     }
   }, []);
   return (
@@ -27,7 +28,9 @@ function App() {
       <Suspense fallback={<div></div>}>
         <ThemeContext.Provider value={{ isDarkMode, setIsDarkMode }}>
           <LoaderContext.Provider value={{ isLoading, setIsLoading }}>
-            <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
+            <ThemeProvider
+              theme={isDarkMode ? { ...darkTheme } : { ...lightTheme }}
+            >
               <CssBaseline />
               <ScrollToTop />
               <Views />

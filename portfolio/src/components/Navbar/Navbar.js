@@ -27,12 +27,11 @@ const Navbar = () => {
   window.addEventListener("scroll", handleNav);
 
   const appbarVariants = {
-    initial: { height: isMobile ? 70 : 100, boxShadow: theme.shadows[0] },
+    initial: { height: isMobile ? 70 : 100, boxShadow: theme.shadows[1] },
     scrolled: { height: theme.navbarHeight, boxShadow: theme.shadows[10] },
   };
 
   //TODO: FIX SCROLL VALUES
-  //TODO: FIX NAV NOT SHOWING
 
   useEffect(() => {
     if (!isLoading) {
