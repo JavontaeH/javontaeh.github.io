@@ -18,7 +18,7 @@ function App() {
       window.matchMedia &&
       window.matchMedia("(prefers-color-scheme: dark)").matches
     ) {
-      setIsDarkMode(false);
+      setIsDarkMode(true);
     } else {
       setIsDarkMode(false);
     }
