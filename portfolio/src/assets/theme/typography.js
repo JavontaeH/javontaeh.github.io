@@ -1,6 +1,6 @@
 // eslint-disable-next-line
 export default {
-  fontFamily: ["Roboto"].join(","),
+  fontFamily: ["Roboto", "sans-serif"].join(","),
   h1: {
     fontWeight: 500,
     fontSize: 60,
