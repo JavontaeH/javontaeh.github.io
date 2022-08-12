@@ -120,7 +120,9 @@ const Card = ({
           animate={controls}
         >
           <Box mr={1}>
-            <Typography variant="h4">View project </Typography>
+            <h4 style={{ fontWeight: 500, fontSize: 30, color: "white" }}>
+              View Project
+            </h4>
           </Box>
           <Icon
             component={motion.div}
@@ -133,7 +135,7 @@ const Card = ({
             variants={{ hover: { y: 7 }, intial: { y: -2 } }}
             animate="hover"
           >
-            <ArrowDownward />
+            <ArrowDownward style={{ fill: "#fff" }} />
           </Icon>
         </Box>
       </motion.div>

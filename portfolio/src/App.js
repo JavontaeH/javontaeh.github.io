@@ -8,7 +8,6 @@ import { BrowserRouter as Router } from "react-router-dom";
 import ThemeContext from "./contexts/themeContext";
 import LoaderContext from "./contexts/loaderContext";
 import Views from "./Views";
-import Check from "./assets/images/Check.js";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -20,7 +19,7 @@ function App() {
     ) {
       setIsDarkMode(true);
     } else {
-      setIsDarkMode(false);
+      setIsDarkMode(true);
     }
   }, []);
   return (
