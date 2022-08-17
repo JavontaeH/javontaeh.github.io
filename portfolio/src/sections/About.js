@@ -19,7 +19,7 @@ const About = () => {
 
   const about_desc = (
     <p>
-      Prior to attending{" "}
+      Before attending{" "}
       <Link
         className="custom-link"
         href="https://nashvillesoftwareschool.com/"
@@ -28,11 +28,11 @@ const About = () => {
         {"NSS"}
       </Link>
       , I was an avid gamer with a lifelong interest in tech. While supporting
-      my college education doing freelance work as a Thumbnail Designer and
+      my college education by doing freelance work as a Thumbnail Designer and
       Video Editor, my passion for content creation and technology led me to
-      pursuing web development as a way to utilize my logical and creative
-      problem-solving skills, and I'm hoping to bring that passion into the
-      workforce soon
+      pursue web development to utilize my logical and creative problem-solving
+      skills. I plan to bring that same passion and energy into a role as a
+      junior developer.
     </p>
   );
 
