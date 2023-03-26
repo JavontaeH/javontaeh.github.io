@@ -4,9 +4,10 @@ import CrudemonSS from "./assets/images/Crudemon-SS.png";
 export const skillsList = [
   { title: "JavaScript", value: 85 },
   { title: "React JS", value: 80 },
+  { title: "Angular", value: 75 },
   { title: "C#", value: 80 },
   { title: ".NET", value: 75 },
-  { title: "SqlServer", value: 70 },
+  { title: "SQL", value: 70 },
   { title: "Firebase", value: 50 },
 ];
 
@@ -25,14 +26,27 @@ export const experienceList = [
       instagram: "https://www.instagram.com/nashvillesoftwareschool/",
     },
   },
+  {
+    id: 1,
+    company: "Navihealth",
+    title: "Associate Software Engineer",
+    duration: "October 2022 - Current",
+    overview:
+      "Start of my software engineering career! Have had the oppurtunity to apply my knowledge and continue learning in an agile enviornment. Will update this section with accomplishments eventually.",
+
+    links: {
+      website: "https://navihealth.com/",
+      facebook: "https://www.facebook.com/naviHealthInc/",
+      instagram: "https://www.instagram.com/navihealth/?hl=en",
+    },
+  },
 ];
 
 export const projectList = [
   {
     id: 1,
     title: "WebStone",
-    overview:
-      "Full-Stack web app that allows you to play a fantasy card game (emulating Hearthstone) in your browser!",
+    overview: "Full-Stack web app that allows you to play a fantasy card game (emulating Hearthstone) in your browser!",
     extendedOverview: `WebStone is an application designed
 for card game fans that allows you to
 create and interact with decks to play a
@@ -47,8 +61,7 @@ directly in your browser. It's a full-stack web api application utilizing React 
   {
     id: 2,
     title: "Crudemon",
-    overview:
-      "Front-end web application that allows you to create pokemon and then battle with them!",
+    overview: "Front-end web application that allows you to create pokemon and then battle with them!",
     extendedOverview: `CRUD-EMON is a client-side application leveraging React, that is
 designed for Pokemon and video
 game fans. It allows you to create,
