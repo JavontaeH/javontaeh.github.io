@@ -2,13 +2,14 @@ import WebStoneSS from "./assets/images/Webstone-SS.png";
 import CrudemonSS from "./assets/images/Crudemon-SS.png";
 
 export const skillsList = [
-  { title: "JavaScript", value: 85 },
+  { title: "JavaScript", value: 90 },
   { title: "React JS", value: 80 },
-  { title: "Angular", value: 75 },
+  { title: "Angular", value: 85 },
   { title: "C#", value: 80 },
-  { title: ".NET", value: 75 },
-  { title: "SQL", value: 70 },
-  { title: "Firebase", value: 50 },
+  { title: ".NET", value: 85 },
+  { title: "SQL", value: 85 },
+  { title: "Powershell", value: 75 },
+  { title: "Playwright", value: 70 }
 ];
 
 export const experienceList = [
@@ -32,7 +33,14 @@ export const experienceList = [
     title: "Associate Software Engineer",
     duration: "October 2022 - Current",
     overview:
-      "Start of my software engineering career! Have had the oppurtunity to apply my knowledge and continue learning in an agile enviornment. Will update this section with accomplishments eventually.",
+      `At naviHealth, part of Optum/UnitedHealth Group, we enhance healthcare for over 10 million seniors in post-acute care management. I played a key role as a full-stack developer, skillfully integrating technologies like Angular, .NET Core, C#, MSSQL Server, and Web API for robust web applications.
+
+      Collaboration was at the core of our success. I closely worked with product owners and business analysts to ensure project alignment and optimization. Our SCRUM team showcased exceptional proficiency, delivering high-quality solutions with self-organization.
+      
+      I developed an extensive suite of automated system tests using PowerShell, improving internal processes and efficiency. I also led the transition from PowerShell to C# with WinForms for automated testing.
+      
+      Throughout the Software Development Life Cycle, I actively participated in SCRUM, engaging in peer planning, code reviews, and design refinement. My contributions were recognized with a Grand Prix nomination and a Bravo award, highlighting my positive impact on the organization's mission to provide better healthcare experiences for seniors`    
+    ,
 
     links: {
       website: "https://navihealth.com/",
